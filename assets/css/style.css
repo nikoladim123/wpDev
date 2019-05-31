@@ -27,6 +27,7 @@
 body{
   margin: 0;
   background-color: rgb(239,239,239);
+  perspective: 104vw;
 }
 
 .BG{
@@ -247,16 +248,37 @@ body{
   cursor: pointer;
   filter: brightness(120%);
 }
-/* .phoneDiv{
+.phoneContainer {
+    position: absolute;
+    /* perspective: 66vw; */
+    top: 0;
+    /* width: auto; */
+    border: 1px solid red;
+    transform: rotateX(26deg);
+}
+.phoneDiv{
   z-index: 1;
   position: absolute;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: fit-content;
+  transform: rotate(-31deg);
+  left: 43vw;
+  top: 0vw;
 }
 .phone{
   position: relative;
   width: 31.738vw;
 }
+
+.phoneContainer{
+  position: absolute;
+}
+
+
+
+
+
+
 
 #myVid{
   position: absolute;
@@ -267,7 +289,7 @@ body{
   width: 20.7vw;
   border-radius: 3vw;
   object-fit: fill;
-} */
+}
 
 .phoneNarrowBox{
   /* border: 1px solid red; */
