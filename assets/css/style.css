@@ -1,0 +1,304 @@
+@font-face {
+  font-family: 'Knockout-Regular';
+  font-display: auto;
+  src: url('../fonts/Knockout-Regular.otf') format('truetype');
+}
+@font-face {
+  font-family: 'Arvo-Italic';
+  font-display: auto;
+  src: url('../fonts/Arvo-Italic.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Arvo-Regular';
+  font-display: auto;
+  src: url('../fonts/Arvo-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Arvo-Bold';
+  font-display: auto;
+  src: url('../fonts/Arvo-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat-Bold';
+  font-display: auto;
+  src: url('../fonts/Montserrat-Bold.otf') format('truetype');
+}
+
+body{
+  margin: 0;
+  background-color: rgb(239,239,239);
+}
+
+.BG{
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.logo{
+  position: relative;
+  margin-left: 4.6386vw;
+  margin-top: 1.8vw;
+  width: 19.238vw;
+  height: 3.710vw;
+}
+
+.headings{
+  position: relative;
+  /* border:1px solid red; */
+  color: white;
+  margin-top: 4.150vw;
+  margin-left: 5.0781vw;
+}
+
+.headings h1{
+  margin: 0;
+  font-family: 'Knockout-Regular';
+  font-size: 2.34375vw;
+}
+.headings h2{
+  margin: 0;
+  font-family: 'Arvo-Italic';
+  font-weight: 100;
+  font-size: 1.17187vw;
+}
+
+.whereDoesYoursFit{
+  color: white;
+  /* border: 1px solid red; */
+  position: relative;
+  margin-left: 6.98242vw;
+  margin-top: 8.544vw;
+}
+
+.icon{
+  position: absolute;
+  width: 1.5625vw;
+  height: 1.5625vw;
+  left: -1.7vw;
+}
+.whereDoesYoursFit p{
+  font-size: 1.17187vw;
+  font-family: 'Arvo-Regular';
+  margin: 0;
+  margin-bottom: 0.7vw;
+}
+
+.whereDoesYoursFit h2{
+  font-size: 1.46484vw;
+  font-family: 'Arvo-Bold';
+  margin: 0;
+}
+#orangeSpan{
+  color: rgb(232,105,64);
+}
+
+
+.dontSettleForLess{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 1px solid blue; */
+  width: fit-content;
+  margin-left: 10.474vw;
+  margin-top: 5vw;
+}
+
+.dontSettleForLess p{
+  color: white;
+  font-family: 'Montserrat-Bold';
+  font-size: 1.1718vw;
+}
+
+.arrowButton{
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 5.224vw;
+  height: 5.224vw;
+  border-radius: 50%;
+  background-color: rgb(218,218,218);
+}
+.arrowButton:hover{
+  cursor: pointer;
+  filter: brightness(120%);
+}
+.arrowButton img{
+  position: relative;
+  margin-bottom: -0.2vw;
+  animation-name: arrows;
+  animation-duration: 3s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.arrowOne{
+  width: 2.0507vw;
+  height: 1.367vw;
+  opacity: 0.5;
+}
+.arrowTwo{
+  width: 1.8554vw;
+  height: 1.12vw;
+  opacity: 0.5;
+  animation-delay: 1s;
+}
+.arrowThree{
+  width: 1.4648vw;
+  height: 0.83vw;
+  opacity: 0.15;
+  animation-delay: 2s;
+}
+
+@keyframes arrows {
+  0%{
+    opacity: 0.15;
+  }
+  50%{
+    opacity: 0.5;
+  }
+  100%{
+    opacity: 0.15;
+  }
+}
+
+/* bg animations and all that sheet*/
+.whiteCircle{
+  position: absolute;
+  width: 68.1152vw;
+  left: 29vw;
+}
+
+.glassBubble{
+  animation-direction:  alternate;
+  animation-iteration-count: infinite;
+  animation-name: glass;
+  animation-duration: 10s;
+  position: absolute;
+  width: 61.0839vw;
+  left: 31vw;
+  top: 0vw;
+  transform: scale(1);
+}
+@keyframes glass {
+  0%{
+    /* left: 31vw; */
+    /* top: 0; */
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50%{
+    /* left: 30vw; */
+    /* top: 1vw; */
+    transform: scale(1.01);
+    opacity: 1;
+  }
+  100%{
+    /* left: 30vw; */
+    /* top: 2vw; */
+    transform: scale(0.99);
+    opacity: 0.6;
+  }
+}
+
+.rayOne{
+  animation-direction:  alternate;
+  animation-iteration-count: infinite;
+  animation-name: rays;
+  animation-duration: 3s;
+  top: 7vw;
+  left: 21vw;
+  position: absolute;
+  width: 25.8789vw;
+  opacity: 1;
+}
+.rayTwo{
+  animation-direction:  alternate;
+  animation-iteration-count: infinite;
+  animation-name: rays;
+  animation-duration: 3s;
+  animation-delay: 1.5s;
+  left: 32vw;
+  position: absolute;
+  width: 25.8789vw;
+  opacity: 1;
+}
+@keyframes rays{
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0.3;
+  }
+}
+
+.sideButon{
+  transition: 0.3s;
+  position: fixed;
+  width: 5.957vw;
+  right: 1vw;
+  top: 1vw;
+}
+.sideButon:hover{
+  cursor: pointer;
+  filter: brightness(120%);
+}
+/* .phoneDiv{
+  z-index: 1;
+  position: absolute;
+  border: 1px solid red;
+  width: fit-content;
+}
+.phone{
+  position: relative;
+  width: 31.738vw;
+}
+
+#myVid{
+  position: absolute;
+  top: 6vw;
+  left: 5.5vw;
+  height: 42vw;
+  display: block;
+  width: 20.7vw;
+  border-radius: 3vw;
+  object-fit: fill;
+} */
+
+.phoneNarrowBox{
+  /* border: 1px solid red; */
+  position: absolute;
+  left: 34vw;
+  top: 1vw;
+  /* perspective: 50vw; */
+
+}
+.phoneNarrow{
+  position: relative;
+  width: 47.607vw;
+}
+
+.vidBox{
+  perspective: 50vw;
+  position: absolute;
+  top: 0;
+  transform: rotateY(30deg);
+}
+
+#mobVid{
+  width: 17vw;
+  height: 29vw;
+  object-fit: fill;
+  position: absolute;
+  top: 8vw;
+  left: 13vw;
+  transform: rotate(-33deg);
+  /* transform: matrix3d(1.499139, -0.721549, 0, 0.000388,
+                   1.172229, 2.01006, 0, -0.001153,
+                   0, 0, 1, 0,
+                   142, 175, 0, 1); */
+}
