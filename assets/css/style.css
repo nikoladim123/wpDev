@@ -41,8 +41,8 @@ body{
   position: relative;
   margin-left: 4.6386vw;
   margin-top: 1.8vw;
-  width: 19.238vw;
-  height: 3.710vw;
+  width: 21.238vw;
+  /* height: 3.710vw; */
 }
 
 .headings{
@@ -92,7 +92,7 @@ body{
   margin: 0;
 }
 #orangeSpan{
-  color: rgb(232,105,64);
+  color: rgb(242,191,49);
 }
 
 
@@ -178,7 +178,7 @@ body{
   animation-direction:  alternate;
   animation-iteration-count: infinite;
   animation-name: glass;
-  animation-duration: 10s;
+  animation-duration: 3s;
   position: absolute;
   width: 61.0839vw;
   left: 31vw;
@@ -221,9 +221,21 @@ body{
   animation-direction:  alternate;
   animation-iteration-count: infinite;
   animation-name: rays;
-  animation-duration: 3s;
+  animation-duration: 2s;
   animation-delay: 1.5s;
   left: 32vw;
+  position: absolute;
+  width: 25.8789vw;
+  opacity: 1;
+}
+.rayThree{
+  animation-direction:  alternate;
+  animation-iteration-count: infinite;
+  animation-name: rays;
+  animation-duration: 2s;
+  animation-delay: 2.5s;
+  left: 25vw;
+  top: 0;
   position: absolute;
   width: 25.8789vw;
   opacity: 1;
@@ -233,7 +245,7 @@ body{
     opacity: 1;
   }
   100%{
-    opacity: 0.3;
+    opacity: 0.1;
   }
 }
 
@@ -248,30 +260,35 @@ body{
   cursor: pointer;
   filter: brightness(120%);
 }
+.phonePerspectiveContainer{
+  transform: rotatey(19deg);
+  perspective: 193vw;
+}
 .phoneContainer {
     position: absolute;
     /* perspective: 66vw; */
-    top: 0;
+    top: -8vw;
     /* width: auto; */
     border: 1px solid red;
-    transform: rotateX(26deg);
+    transform: rotateX(37deg);
 }
 .phoneDiv{
   z-index: 1;
   position: absolute;
   /* border: 1px solid red; */
   width: fit-content;
-  transform: rotate(-31deg);
-  left: 43vw;
+  transform: rotate(-33deg);
+  left: 48vw;
   top: 0vw;
 }
 .phone{
   position: relative;
-  width: 31.738vw;
+  width: 36.738vw;
 }
 
 .phoneContainer{
   position: absolute;
+  perspective: 29vw;
 }
 
 
@@ -282,11 +299,11 @@ body{
 
 #myVid{
   position: absolute;
-  top: 6vw;
-  left: 5.5vw;
-  height: 42vw;
+  top: 6.5vw;
+  left: 7vw;
+  height: 49vw;
   display: block;
-  width: 20.7vw;
+  width: 23vw;
   border-radius: 3vw;
   object-fit: fill;
 }

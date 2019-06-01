@@ -4,32 +4,23 @@ var numberSpanThree = document.getElementById('numberSpanThree');
 
 var numberForSpan = 0;
 var numberForSpanTwo = 0;
-var numberForSpanThree = 0;
+var numberForSpanThree = 300;
+var int = 10;
 
 var interv = setInterval(()=>{
-  changeSpanNum();
-  changeSpanNumTwo();
-  changeSpanNumThree();
-},1);
-
-function changeSpanNum() {
-  if (numberForSpan <= 965) {
-    numberForSpan +=1;
-  }
-  numberSpan.innerText = numberForSpan + ',';
-}
-
-function changeSpanNumTwo(){
-  if (numberForSpanTwo <= 230) {
-    numberForSpanTwo +=1;
-  }
-  numberSpanTwo.innerText = numberForSpanTwo + ',';
-}
+  // changeSpanNum();
+  // changeSpanNumTwo();
+  // changeSpanNumThree();
+  int = Math.floor(Math.random() *1700);
+},int);
 
 
-function changeSpanNumThree(){
-  if (numberForSpanThree <= 436) {
-    numberForSpanThree +=1;
-  }
+
+function loop() {
+  numberForSpanThree++;
   numberSpanThree.innerText = numberForSpanThree;
+  window.setTimeout(loop, Math.floor(Math.random() *1700));
+  // console.log(123);
 }
+
+loop();
