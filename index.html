@@ -65,8 +65,8 @@
       <div class="purpScreenDiv" style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);">
         <picture>
           <source media="(min-width: 1360px)" srcset="assets/image/desktop/maintenance/purple-screen.png">
-          <source media="(max-width: 1360px) and (min-width: 760px)" srcset="assets/image/tablet/maintenance/purple-screen.png">
-          <source media="(max-width: 760px)" srcset="assets/image/mobile/maintenance/purple-screen.png">
+          <source media="(max-width: 1360px) and (min-width: 760px)" srcset="assets/image/desktop/maintenance/purple-screen.png">
+          <source media="(max-width: 760px)" srcset="assets/image/desktop/maintenance/purple-screen.png">
           <img class="purpScreen" src="assets/image/desktop/maintenance/purple-screen.png" alt="Creative web design.">
         </picture>
         <div class="purpleScreenGearRotate">
@@ -268,22 +268,25 @@
         <span>We'd like to gear from you</span> </h2>
         <form class="questionForm" action="index.html" method="post">
           <div class="inputContainer">
-            <p>name <span>*</span> </p> <input type="text" name="" value=""> <br>
-            <p>email <span>*</span> </p> <input type="text" name="" value=""> <br>
+            <p>Name <span>*</span> </p> <input type="text" name="" value=""> <br>
+            <p>Email <span>*</span> </p> <input type="text" name="" value=""> <br>
             <p>Website <span> </span> </p> <input type="text" name="" value=""> <br>
             <p>Phone <span> </span> </p> <input type="text" name="" value="">
           </div>
           <textarea name="name" rows="8" cols="80"></textarea>
+          <div class="sendButonContainer">
+            <div class="uploadButton">
+              <img src="assets/image/upload.png" alt="">
+              <p>Upload File</p>
+            </div>
+            <button class="send" type="submit" name="button">Send</button>
+          </div>
         </form>
-
-        <div class="uploadButton">
-          <img src="assets/image/upload.png" alt="">
-          <p>Upload File</p>
-        </div>
+        <p class="weWillBeBack">We will get back to you within 24 hours.</p>
       </div>
 
       <div class="logoDiv">
-        <img src="assets/image/logo.png" alt="Solid codeus logo">
+        <a href="#"><img src="assets/image/logo.png" alt="Solid codeus logo"></a>
       </div>
 
     </section>

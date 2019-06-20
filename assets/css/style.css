@@ -62,6 +62,9 @@ body{
   perspective: 104vw;
   overflow-x: hidden;
 }
+h2{
+  color: rgb(51,55,69);
+}
 
 .header{
   perspective: 120vw;
@@ -96,6 +99,7 @@ body{
   font-size: 2.34375vw;
 }
 .headings h2{
+  color: white;
   margin: 0;
   font-family: 'Arvo-Italic';
   font-weight: 100;
@@ -127,6 +131,7 @@ body{
   font-size: 1.46484vw;
   font-family: 'Arvo-Bold';
   margin: 0;
+  color: white;
 }
 #orangeSpan{
   color: rgb(242,191,49);
@@ -395,12 +400,14 @@ body{
   font-family: 'Aileron-Black';
   font-size: 3.5087vw;
   margin-bottom: 2.43vw;
+  color: rgb(51,55,69);
 }
 .wordPressDevelopment h2 span{
   font-family: 'Aileron-Regular';
 }
 
 .wordPressDevelopment p{
+  color: rgb(51,55,69);
   line-height: 1.5;
   margin: 0;
   font-family: 'Aileron-Regular';
@@ -479,7 +486,7 @@ body{
 .rightSidesup{
   /* border: 1px solid red; */
   position: absolute;
-  width: 50%;
+  width: 47%;
   height: 100%;
   right: 0;
   display: flex;
@@ -492,18 +499,18 @@ body{
   transition: 0.4s;
   width: 29.727vw;
   height: 6.2378vw;
-  box-shadow: inset 0px 0px 0px 1px rgb(219,219,219);
+  box-shadow: inset 0px 0px 0px 1px rgba(219,219,219,0.5);
   border: 0.4385vw solid white;
-  outline: 1px solid rgb(219,219,219);
+  outline: 1px solid rgba(219,219,219,0.5);
   display: flex;
   align-items: center;
-  margin-top: 0.5vw;
-  margin-bottom: 0.5vw;
+  margin-top: 1.4vw;
+  margin-bottom: 1.4vw;
 }
 .servicesOptionDiv:hover{
   cursor: pointer;
-  background: rgb(240,240,240);
-  border: 0.4385vw solid rgb(240,240,240);
+  background: rgb(245,245,245);
+  /* border: 0.4385vw solid rgb(240,240,240); */
 }
 .servicesOptionDiv img{
   width: 4.532vw;
@@ -513,6 +520,7 @@ body{
   font-family: 'Aileron-Black';
   font-size: 1.1384vw;
   margin: 0;
+  color: rgb(51,55,69);
 }
 /* test */
 
@@ -573,6 +581,7 @@ body{
   padding-right: 0.7vw;
 }
 .promiseBoxText h2{
+  color: white;
   font-size: 1.834vw;
   margin: 0;
   font-family: 'Arvo-Bold';
@@ -877,6 +886,9 @@ body{
   margin-right: 4.3838vw;
   margin-top: 5vw;
 }
+.add h2{
+  color: white;
+}
 
 .addNum{
   font-size: 6.332vw;
@@ -903,6 +915,7 @@ body{
   position: relative;
   width: 65.611vw;
   background: radial-gradient(ellipse at center, rgba(147,151,238,1) 0%, rgba(83,88,236,1) 100%);
+  box-shadow: 0px 0px 208px -19px rgba(255,185,254,1);
 }
 
 .questionContainer h2{
@@ -976,11 +989,15 @@ body{
   margin-bottom: 2.0457vw;
   border-radius: 1vw;
   padding: 0.5vw;
+  top: 0px;
+  left: 0px;
+  border: 0px solid transparent;
+  box-sizing: border-box;
 }
 .uploadButton:hover{
   cursor: pointer;
-  top: -2px;
-  left: -2px;
+  top: -3px;
+  left: -3px;
   border-top: 1px solid black;
   border-left: 1px solid black;
   border-right: 2px solid black;
@@ -995,6 +1012,40 @@ body{
   color: white;
   font-size: 1.071vw;
   font-family: 'Aileron-Regular';
+}
+.sendButonContainer{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 7.2vw;
+}
+.send{
+  transition: 0.3s;
+  border: none;
+  width: 8.816vw;
+  height: 3.068vw;
+  background-color: rgb(106,249,223);
+  border-radius: 1.3vw;
+  color: white;
+  font-size: 1.561vw;
+  font-family: 'Aileron-Bold';
+  margin-left: 19.4836vw;
+  box-shadow: 0px 0px 37px -4px rgba(255,255,255,0.5);
+}
+.send:hover{
+  cursor: pointer;
+  box-shadow: 0px 0px 37px -4px rgba(255,255,255,0.7);
+  background-color: rgb(116,249,233);
+}
+
+.weWillBeBack{
+  position: absolute;
+  color: white;
+  opacity: 0.43;
+  bottom: -3vw;
+  right: 0;
+  font-size: 1.169vw;
+  font-family: 'Aileron-UltraLight';
 }
 
 .footerBG{
