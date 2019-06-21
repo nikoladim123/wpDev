@@ -59,7 +59,7 @@
 body{
   margin: 0;
   background-color: rgb(239,239,239);
-  perspective: 104vw;
+  /* perspective: 104vw; */
   overflow-x: hidden;
 }
 h2{
@@ -291,12 +291,29 @@ h2{
   }
 }
 
-.sideButon{
-  transition: 0.3s;
+.sideButonDiv{
+  /* border: 1px solid; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: fixed;
-  width: 5.957vw;
   right: 1vw;
   top: 1vw;
+}
+
+.sideButonDiv .fab{
+  transition: 0.3s;
+  font-size: 2vw;
+  color: #5d1aa9;
+  margin-bottom: 1vw;
+}
+.sideButonDiv .fab:hover{
+  filter: brightness(150%);
+}
+
+.sideButon{
+  transition: 0.3s;
+  width: 5.957vw;
 }
 .sideButon:hover{
   cursor: pointer;
@@ -432,6 +449,7 @@ h2{
   margin: 0 !important;
 }
 .supportAndMaintance {
+  perspective: 800vw;
   overflow: hidden;
   position: relative;
   min-height: 45.175vw;
@@ -482,6 +500,14 @@ h2{
   animation-timing-function: linear;
   animation-direction: reverse;
 }
+@keyframes purpleTabletGear {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
 
 .rightSidesup{
   /* border: 1px solid red; */
@@ -512,7 +538,11 @@ h2{
   background: rgb(245,245,245);
   /* border: 0.4385vw solid rgb(240,240,240); */
 }
+.servicesOptionDiv:hover > .servicesOptionImg{
+  transform: scale(1.2);
+}
 .servicesOptionDiv img{
+  transition: 0.5s;
   width: 4.532vw;
   margin-left: 15px;
 }
@@ -852,7 +882,7 @@ h2{
   top: -1.7vw;
   width: 7.696vw;
   border-radius: 50%;
-  background-color: rgba(255,255,255,0.2);
+  background-color: rgba(255,255,255,0.1);
 }
 .procChoseBox h4{
   margin-top: 1vw;
