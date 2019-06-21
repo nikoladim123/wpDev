@@ -306,8 +306,10 @@ h2{
   font-size: 2vw;
   color: #5d1aa9;
   margin-bottom: 1vw;
+  opacity: 0.4;
 }
 .sideButonDiv .fab:hover{
+  opacity: 1;
   filter: brightness(150%);
 }
 
