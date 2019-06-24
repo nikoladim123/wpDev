@@ -8,7 +8,7 @@
   </head>
   <body>
 
-    <div class="header">
+    <div id="header" class="header">
       <img class="BG" src="assets/image/bg.jpg" alt="">
       <a href="https://nikoladim123.github.io/SolidCodeus/"><img class="logo" src="assets/image/logo.png" alt=""></a>
 
@@ -246,6 +246,8 @@
     </section>
 
     <section class="ourAddsSection">
+      <video id="clientsSectionVid" src="assets/videos/clientsSection.mp4" muted loop autoplay poster="posterimage.jpg"></video>
+      <div class="ourAddsOverlay"></div>
       <div class="add">
         <h2><span class="addNum">0</span> <br>
         <span class="addTxt">years<br> in business</span> </h2>
@@ -260,11 +262,12 @@
         <h2><span class="addNum">0</span> <br>
         <span class="addTxt">Projects<br>Completed</span> </h2>
       </div>
+
     </section>
 
-    <section class="questions">
+    <section id="questions" class="questions">
       <img class="footerBG" src="assets/image/footerBG.png" alt="">
-      <div class="questionContainer">
+      <div  class="questionContainer">
         <h2>HAVE A QUESTION? <br>
         <span>We'd like to gear from you</span> </h2>
         <form class="questionForm" action="index.html" method="post">
@@ -290,10 +293,19 @@
         <a href="#"><img src="assets/image/logo.png" alt="Solid codeus logo"></a>
       </div>
 
+      <a href="#header">
+        <div class="arrowToTop">
+            <p>&gt;</p>
+        </div>
+      </a>
+
     </section>
 
     <div class="sideButonDiv">
-      <img class="sideButon" src="assets/image/buton.png" alt="">
+      <div class="sideButtonBox">
+        <a href="#questions"><img class="sideButon" src="assets/image/buton.png" alt=""></a>
+        <p>Contact Us</p>
+      </div>
       <a href="#"><i class="fab fa-facebook"></i></a>
       <a href="#"><i class="fab fa-instagram"></i></a>
       <a href="#"><i class="fab fa-pinterest"></i></a>

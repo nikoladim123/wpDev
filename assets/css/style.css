@@ -18,11 +18,6 @@
   font-display: auto;
   src: url('../fonts/Arvo-Bold.ttf') format('truetype');
 }
-@font-face {
-  font-family: 'Montserrat-Bold';
-  font-display: auto;
-  src: url('../fonts/Montserrat-Bold.otf') format('truetype');
-}
 /* Aileron */
 @font-face {
   font-family: 'Aileron-UltraLight';
@@ -53,6 +48,10 @@
   font-family: 'Aileron-Black';
   font-display: auto;
   src: url('../fonts/aileron/Aileron-Black.otf') format('truetype');
+}
+
+html{
+  scroll-behavior: smooth;
 }
 
 
@@ -151,7 +150,7 @@ h2{
 
 .dontSettleForLess p{
   color: white;
-  font-family: 'Montserrat-Bold';
+  font-family: 'Aileron-Bold';
   font-size: 1.1718vw;
 }
 
@@ -300,17 +299,31 @@ h2{
   right: 1vw;
   top: 1vw;
 }
+.sideButtonBox{
+  position: relative;
+  /* border: 1px solid; */
+}
+.sideButtonBox p {
+  position: absolute;
+  font-family: 'Aileron-Regular';
+  margin: 0;
+  left: 2vw;
+  top: 2.7vw;
+  font-size: 1.8vw;
+  color: blueviolet;
+  writing-mode: tb-rl;
+  pointer-events: none;
+}
 
 .sideButonDiv .fab{
   transition: 0.3s;
   font-size: 2vw;
-  color: #5d1aa9;
+  color: #1ad5b1;
   margin-bottom: 1vw;
   opacity: 0.4;
 }
 .sideButonDiv .fab:hover{
   opacity: 1;
-  filter: brightness(150%);
 }
 
 .sideButon{
@@ -326,12 +339,10 @@ h2{
   perspective: 193vw;
 }
 .phoneContainer {
-    position: absolute;
-    /* perspective: 66vw; */
-    top: -8vw;
-    /* width: auto; */
-    border: 1px solid red;
-    transform: rotateX(37deg);
+  position: absolute;
+  top: -8vw;
+  border: 1px solid red;
+  transform: rotateX(37deg);
 }
 .phoneDiv{
   z-index: 1;
@@ -903,13 +914,31 @@ h2{
 
 /* ourAddsSection */
 .ourAddsSection{
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 24.354vw;
+}
+#clientsSectionVid{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  object-fit: cover;
+}
+.ourAddsOverlay{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.85;
   background: linear-gradient(to right, rgba(251,101,151,1) 0%, rgba(251,101,151,1) 12%, rgba(236,60,186,1) 89%, rgba(236,60,186,1) 100%);
 }
 .add{
+  position: relative;
   /* border: 1px solid red; */
   text-align: center;
   color: white;
@@ -947,7 +976,7 @@ h2{
   position: relative;
   width: 65.611vw;
   background: radial-gradient(ellipse at center, rgba(147,151,238,1) 0%, rgba(83,88,236,1) 100%);
-  box-shadow: 0px 0px 208px -19px rgba(255,185,254,1);
+  box-shadow: 0px 0px 208px -19px rgba(255,255,255,1);
 }
 
 .questionContainer h2{
@@ -1068,6 +1097,7 @@ h2{
   cursor: pointer;
   box-shadow: 0px 0px 37px -4px rgba(255,255,255,0.7);
   background-color: rgb(116,249,233);
+  filter: brightness(1.4);
 }
 
 .weWillBeBack{
@@ -1096,4 +1126,29 @@ h2{
 .logoDiv img{
   width: 19.1914vw;
   margin-bottom: 4.82vw;
+}
+
+.arrowToTop {
+  position: absolute;
+  width: 2.89vw;
+  height: 2.89vw;
+  background: #fde7de;
+  right: 2vw;
+  bottom: 2vw;
+  transform: rotate(-90deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #d16381;
+}
+.arrowToTop:hover{
+  cursor: pointer;
+}
+.arrowToTop p {
+  pointer-events: none;
+  margin: 0 !important;
+  font-size: 2vw;
+  font-weight: 600;
+  transform: scale(1,2);
+  color: #d16381;
 }
