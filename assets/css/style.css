@@ -305,12 +305,12 @@ h2{
 }
 .sideButtonBox p {
   position: absolute;
-  font-family: 'Aileron-Regular';
+  font-family: 'Aileron-Bold';
   margin: 0;
-  left: 2vw;
-  top: 2.7vw;
-  font-size: 1.8vw;
-  color: blueviolet;
+  left: 2.2vw;
+  top: 3vw;
+  font-size: 1.5vw;
+  color: white;
   writing-mode: tb-rl;
   pointer-events: none;
 }
