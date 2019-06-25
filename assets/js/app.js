@@ -5,8 +5,17 @@ var purpScreenDiv = document.getElementsByClassName('purpScreenDiv')[0];
 var purpTabletDiv = document.getElementsByClassName('purpTabletDiv')[0];
 var purpleScreen = document.getElementsByClassName('purpScreen')[0];
 var addNum = document.getElementsByClassName('addNum');
+var arrowToTop = document.getElementsByClassName('arrowToTop');
+var supportAndMaintance = document.getElementsByClassName('supportAndMaintance');
 
-
+// arrow to top show/hidden
+function arrowToTopFun() {
+	if(supportAndMaintance[0].getClientRects()[0].top < 0){
+		arrowToTop[0].style.opacity = '0.5';
+	}else{
+		arrowToTop[0].style.opacity = '0';
+	}
+}
 
 // number roller
 function runNumInterval(){
@@ -76,4 +85,5 @@ loop();
 window.addEventListener('scroll',()=>{
   purpleScreens();
   runNumInterval();
+	arrowToTopFun();
 })
