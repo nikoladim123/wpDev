@@ -504,10 +504,11 @@ h2{
   font-family: 'Poppins-Light';
 }
 
-.fullWpDev{
-  position: absolute;
-  width: 49.1456vw;
-  top: 21vw;
+.fullWpDev {
+    position: absolute;
+    width: 59.1456vw;
+    top: 25vw;
+    left: -4vw;
 }
 .supportAndMaintance {
   perspective: 800vw;
@@ -979,6 +980,9 @@ h2{
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 250%;
+}
+.supportAndMaintanceFirst{
+  background: white;
 }
 
 .purpScreenDiv {
